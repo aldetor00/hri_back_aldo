@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/b1_low_sdk_example.dir/low_level/b1_low_sdk_example.cpp.o -o b1_low_sdk_example  -Wl,-Bstatic -lbooster_robotics_sdk -Wl,-Bdynamic -lfastrtps -lfastcdr -Wl,-Bstatic -lfoonathan_memory-0.7.3 -Wl,-Bdynamic 

@@ -1,0 +1,19 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/booster/Workspace/booster_robotics_sdk-main/example/low_level/low_level_subscriber.cpp" "CMakeFiles/b1_low_level_subscriber.dir/low_level/low_level_subscriber.cpp.o" "gcc" "CMakeFiles/b1_low_level_subscriber.dir/low_level/low_level_subscriber.cpp.o.d"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

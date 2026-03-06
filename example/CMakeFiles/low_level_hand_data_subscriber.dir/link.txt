@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/low_level_hand_data_subscriber.dir/low_level/low_level_hand_data_subscriber.cpp.o -o low_level_hand_data_subscriber  -Wl,-Bstatic -lbooster_robotics_sdk -Wl,-Bdynamic -lfastrtps -lfastcdr -Wl,-Bstatic -lfoonathan_memory-0.7.3 -Wl,-Bdynamic 

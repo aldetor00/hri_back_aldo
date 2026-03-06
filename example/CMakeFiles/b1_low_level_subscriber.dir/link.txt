@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/b1_low_level_subscriber.dir/low_level/low_level_subscriber.cpp.o -o b1_low_level_subscriber  -Wl,-Bstatic -lbooster_robotics_sdk -Wl,-Bdynamic -lfastrtps -lfastcdr -Wl,-Bstatic -lfoonathan_memory-0.7.3 -Wl,-Bdynamic 

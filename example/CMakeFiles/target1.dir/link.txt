@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/target1.dir/target1.cpp.o -o target1  -Wl,-Bstatic -lbooster_robotics_sdk -Wl,-Bdynamic -lfastrtps -lfastcdr -Wl,-Bstatic -lfoonathan_memory-0.7.3 -Wl,-Bdynamic 
