@@ -1,62 +1,43 @@
-# Booster Robotics SDK
-Booster Robotics SDK aims to provide a simple and easy-to-use interface for developers to control the Booster Robotics products. 
-
-## Prebuild environment
-* OS  (Ubuntu 22.04 LTS)  
-* CPU  (aarch64 and x86_64)   
-* Compiler  (gcc version 11.4.0) 
-
-## Installation
-```bash
-sudo ./install.sh
+primo terminale
+```
+/usr/local/webots/webots
 ```
 
-## Install python package for building python binding locally
-```bash
-pip3 install pybind11
-pip3 install pybind11-stubgen
+secondo terminale
+```cd ~/Scaricati
+./booster-runner-full-webots-7dof_arms-0.0.3.run
 ```
 
-## Build examples
-```bash
-mkdir build
-cd build
-cmake ..
-make
+terzo
+```cd ~/booster_ws/src/booster_robotics_sdk/build 
+./b1_loco_example_client 127.0.0.1
 ```
 
-## Run examples
-### 1. run b1_arm_sdk_example_client locally
+quarto
 ```
-cd build
-./b1_arm_sdk_example_client 127.0.0.1
+cd ~/Scrivania/booster_robotics_sdk-main/build
+ sudo ./b1_low_level_subscriber lo
+
 ```
-### 2. run b1_7dof_arm_sdk_example_client locally
+quinto
 ```
-cd build
-./b1_7dof_arm_sdk_example_client 127.0.0.1
+ros2 topic list
 ```
-### 3. run other example xxx locally
+aggiungi questo in fondo al  bash 
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+export CYCLONEDDS_URI='<CycloneDDS><Domain><General><NetworkInterfaceAddress>lo</NetworkInterfaceAddress></General></Domain></CycloneDDS>'
 ```
-cd build
-./xxx 127.0.0.1
+sudo apt update
+sudo apt install ros-humble-rmw-cyclonedds-cpp
+gedit ~/.bashrc
+source ~/.bashrc
+
 ```
 
-## Build python binding api and install
-```bash
-mkdir build
-cd build
-cmake .. -DBUILD_PYTHON_BINDING=on
-make
-sudo make install
+```
 ```
 
-if pybind11-stubgen cannot be found even after pip install, export PATH
-```bash
-export PATH=/home/[user name]/.local/bin:$PATH
-```
 
-## License
 
 This project is licensed under the Apache License, Version 2.0. See the LICENSE file for details.
 
